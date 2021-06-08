@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        navigationTitle("Trending Repo")
+        
+        List(0..<5){item in
+            TrendingRepoItem()
+        }
     }
 }
 

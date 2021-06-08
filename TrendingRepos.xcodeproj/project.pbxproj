@@ -15,6 +15,7 @@
 		529DA9D9266F44E100F45479 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 529DA9D7266F44E100F45479 /* LaunchScreen.storyboard */; };
 		529DA9E4266F44E200F45479 /* TrendingReposTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DA9E3266F44E200F45479 /* TrendingReposTests.swift */; };
 		529DA9EF266F44E200F45479 /* TrendingReposUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DA9EE266F44E200F45479 /* TrendingReposUITests.swift */; };
+		529DAA03266F49DD00F45479 /* TrendingRepoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DAA02266F49DD00F45479 /* TrendingRepoItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		529DA9EA266F44E200F45479 /* TrendingReposUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrendingReposUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		529DA9EE266F44E200F45479 /* TrendingReposUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingReposUITests.swift; sourceTree = "<group>"; };
 		529DA9F0266F44E200F45479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		529DAA02266F49DD00F45479 /* TrendingRepoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		529DA9CB266F44DE00F45479 /* TrendingRepos */ = {
 			isa = PBXGroup;
 			children = (
+				529DAA01266F49BF00F45479 /* views */,
 				529DA9CC266F44DE00F45479 /* AppDelegate.swift */,
 				529DA9CE266F44DE00F45479 /* SceneDelegate.swift */,
 				529DA9D0266F44DE00F45479 /* ContentView.swift */,
@@ -134,6 +137,14 @@
 				529DA9F0266F44E200F45479 /* Info.plist */,
 			);
 			path = TrendingReposUITests;
+			sourceTree = "<group>";
+		};
+		529DAA01266F49BF00F45479 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				529DAA02266F49DD00F45479 /* TrendingRepoItem.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				529DA9CD266F44DE00F45479 /* AppDelegate.swift in Sources */,
+				529DAA03266F49DD00F45479 /* TrendingRepoItem.swift in Sources */,
 				529DA9CF266F44DE00F45479 /* SceneDelegate.swift in Sources */,
 				529DA9D1266F44DE00F45479 /* ContentView.swift in Sources */,
 			);
