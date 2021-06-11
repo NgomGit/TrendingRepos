@@ -18,6 +18,7 @@
 		529DAA03266F49DD00F45479 /* TrendingRepoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DAA02266F49DD00F45479 /* TrendingRepoItem.swift */; };
 		529DAA06266F73FC00F45479 /* TrendingRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DAA05266F73FC00F45479 /* TrendingRepo.swift */; };
 		529DAA08266F744200F45479 /* RepoOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DAA07266F744200F45479 /* RepoOwner.swift */; };
+		529DAA0B266F7AC200F45479 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DAA0A266F7AC200F45479 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		529DAA02266F49DD00F45479 /* TrendingRepoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoItem.swift; sourceTree = "<group>"; };
 		529DAA05266F73FC00F45479 /* TrendingRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepo.swift; sourceTree = "<group>"; };
 		529DAA07266F744200F45479 /* RepoOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoOwner.swift; sourceTree = "<group>"; };
+		529DAA0A266F7AC200F45479 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		529DA9CB266F44DE00F45479 /* TrendingRepos */ = {
 			isa = PBXGroup;
 			children = (
+				529DAA09266F7A7200F45479 /* networks */,
 				529DAA04266F73EB00F45479 /* models */,
 				529DAA01266F49BF00F45479 /* views */,
 				529DA9CC266F44DE00F45479 /* AppDelegate.swift */,
@@ -159,6 +162,14 @@
 				529DAA07266F744200F45479 /* RepoOwner.swift */,
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		529DAA09266F7A7200F45479 /* networks */ = {
+			isa = PBXGroup;
+			children = (
+				529DAA0A266F7AC200F45479 /* SwiftyJSON.swift */,
+			);
+			path = networks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +307,7 @@
 				529DAA06266F73FC00F45479 /* TrendingRepo.swift in Sources */,
 				529DAA08266F744200F45479 /* RepoOwner.swift in Sources */,
 				529DA9CF266F44DE00F45479 /* SceneDelegate.swift in Sources */,
+				529DAA0B266F7AC200F45479 /* SwiftyJSON.swift in Sources */,
 				529DA9D1266F44DE00F45479 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

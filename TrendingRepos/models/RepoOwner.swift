@@ -8,14 +8,14 @@
 import Foundation
 
 struct  RepositoryOwner {
-    let repositoryOwnerName: String
-    let repositoryOwnerAvatar: String
-    let numberOfStars: Int
+    var repositoryOwnerName: String
+    var repositoryOwnerAvatar: String
+    
 }
 
 extension RepositoryOwner {
     init(json: JSON) {
-      self.repositoryOwnerName = json["name"].stringValue
-     
+        self.repositoryOwnerName = json["login"].stringValue
+        self.repositoryOwnerAvatar = json["avatar_url"].stringValue
     }
 }

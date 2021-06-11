@@ -8,6 +8,13 @@
 import Foundation
 
 struct TrendingRepo {
-    let repositoryName: String
-    let repositoryDescription: String
+    var repositoryName: String
+    var repositoryDescription: String
+    var numberOfStars: Float
+    
+    init(json: JSON) {
+        self.repositoryName = json["login"].stringValue
+        self.repositoryDescription = json["avatar_url"].stringValue
+        self.numberOfStars = json["avatar_url"].floatValue
+    }
 }

@@ -15,6 +15,7 @@ struct ContentView: View {
         
         List(0..<5){item in
             TrendingRepoItem()
+                .frame(height: 200)
         }
     }
 }
