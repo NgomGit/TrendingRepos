@@ -26,6 +26,9 @@
 		52DB328E2673877B009B0EB3 /* WebClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB328D2673877B009B0EB3 /* WebClient.swift */; };
 		52DB3290267389AE009B0EB3 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB328F267389AE009B0EB3 /* Reachability.swift */; };
 		52DB329226738A81009B0EB3 /* RepositoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB329126738A81009B0EB3 /* RepositoryRequest.swift */; };
+		52DB329526739733009B0EB3 /* RepositoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB329426739733009B0EB3 /* RepositoryService.swift */; };
+		52DB3297267397C9009B0EB3 /* RepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB3296267397C9009B0EB3 /* RepositoryViewModel.swift */; };
+		52DB329B2673998E009B0EB3 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB329A2673998E009B0EB3 /* Container.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,9 @@
 		52DB328D2673877B009B0EB3 /* WebClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebClient.swift; sourceTree = "<group>"; };
 		52DB328F267389AE009B0EB3 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		52DB329126738A81009B0EB3 /* RepositoryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryRequest.swift; sourceTree = "<group>"; };
+		52DB329426739733009B0EB3 /* RepositoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryService.swift; sourceTree = "<group>"; };
+		52DB3296267397C9009B0EB3 /* RepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewModel.swift; sourceTree = "<group>"; };
+		52DB329A2673998E009B0EB3 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,9 @@
 		529DA9CB266F44DE00F45479 /* TrendingRepos */ = {
 			isa = PBXGroup;
 			children = (
+				52DB329926739979009B0EB3 /* DI */,
+				52DB329826739827009B0EB3 /* viewModels */,
+				52DB329326739717009B0EB3 /* services */,
 				52DB3283267384C8009B0EB3 /* requests */,
 				529DAA09266F7A7200F45479 /* networks */,
 				529DAA04266F73EB00F45479 /* models */,
@@ -199,6 +208,30 @@
 				52DB329126738A81009B0EB3 /* RepositoryRequest.swift */,
 			);
 			path = requests;
+			sourceTree = "<group>";
+		};
+		52DB329326739717009B0EB3 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				52DB329426739733009B0EB3 /* RepositoryService.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		52DB329826739827009B0EB3 /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+				52DB3296267397C9009B0EB3 /* RepositoryViewModel.swift */,
+			);
+			path = viewModels;
+			sourceTree = "<group>";
+		};
+		52DB329926739979009B0EB3 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				52DB329A2673998E009B0EB3 /* Container.swift */,
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,14 +370,17 @@
 				529DAA08266F744200F45479 /* RepoOwner.swift in Sources */,
 				529DA9CF266F44DE00F45479 /* SceneDelegate.swift in Sources */,
 				52DB328A2673862A009B0EB3 /* RequestParams.swift in Sources */,
+				52DB329526739733009B0EB3 /* RepositoryService.swift in Sources */,
 				52DB328826738603009B0EB3 /* HTTPMethod.swift in Sources */,
 				52DB3286267385C0009B0EB3 /* Request.swift in Sources */,
 				529DAA0B266F7AC200F45479 /* SwiftyJSON.swift in Sources */,
+				52DB3297267397C9009B0EB3 /* RepositoryViewModel.swift in Sources */,
 				52DB329226738A81009B0EB3 /* RepositoryRequest.swift in Sources */,
 				52DB328C2673869B009B0EB3 /* NetworkError.swift in Sources */,
 				529DA9D1266F44DE00F45479 /* ContentView.swift in Sources */,
 				52DB328E2673877B009B0EB3 /* WebClient.swift in Sources */,
 				52DB3290267389AE009B0EB3 /* Reachability.swift in Sources */,
+				52DB329B2673998E009B0EB3 /* Container.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

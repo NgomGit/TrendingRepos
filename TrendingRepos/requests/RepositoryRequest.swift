@@ -10,8 +10,7 @@ import Foundation
 
 
 enum RepositoryRequest: Request {
-    
-    
+   
     case repositories
     case trendingRepositoriesInLast30Days
     
@@ -30,7 +29,10 @@ enum RepositoryRequest: Request {
     
     var params: RequestParams? {
          return nil
+    }
     
+    var headers: [String : String]?{
+        return nil
     }
     
 }

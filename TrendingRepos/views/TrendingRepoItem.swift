@@ -6,8 +6,27 @@
 //
 
 import SwiftUI
+import RxSwift
 
 struct TrendingRepoItem: View {
+    
+    let repositoryViewModel = Container.shared.makeRepositoryViewModel()
+    
+    private func getTrendingReposInLast30Days(){
+        
+        repositoryViewModel.send(action: .getTrendingRepositoriesInLast30Days()) { response in
+            executeInMainThread  {
+                switch response {
+                    case .success(let json):
+                        print("Gxetting the repositories \(json)")
+                    
+                    case .failure(let error):
+                        print("Error while fetching notifications \(error)")
+                }
+            }
+        }
+    }
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 13, content: {
             Text("Repository Name")
