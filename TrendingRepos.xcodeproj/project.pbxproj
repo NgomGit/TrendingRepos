@@ -19,6 +19,13 @@
 		529DAA06266F73FC00F45479 /* TrendingRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DAA05266F73FC00F45479 /* TrendingRepo.swift */; };
 		529DAA08266F744200F45479 /* RepoOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DAA07266F744200F45479 /* RepoOwner.swift */; };
 		529DAA0B266F7AC200F45479 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DAA0A266F7AC200F45479 /* SwiftyJSON.swift */; };
+		52DB3286267385C0009B0EB3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB3285267385BB009B0EB3 /* Request.swift */; };
+		52DB328826738603009B0EB3 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB328726738603009B0EB3 /* HTTPMethod.swift */; };
+		52DB328A2673862A009B0EB3 /* RequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB32892673862A009B0EB3 /* RequestParams.swift */; };
+		52DB328C2673869B009B0EB3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB328B2673869B009B0EB3 /* NetworkError.swift */; };
+		52DB328E2673877B009B0EB3 /* WebClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB328D2673877B009B0EB3 /* WebClient.swift */; };
+		52DB3290267389AE009B0EB3 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB328F267389AE009B0EB3 /* Reachability.swift */; };
+		52DB329226738A81009B0EB3 /* RepositoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB329126738A81009B0EB3 /* RepositoryRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +64,13 @@
 		529DAA05266F73FC00F45479 /* TrendingRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepo.swift; sourceTree = "<group>"; };
 		529DAA07266F744200F45479 /* RepoOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoOwner.swift; sourceTree = "<group>"; };
 		529DAA0A266F7AC200F45479 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		52DB3285267385BB009B0EB3 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		52DB328726738603009B0EB3 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		52DB32892673862A009B0EB3 /* RequestParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestParams.swift; sourceTree = "<group>"; };
+		52DB328B2673869B009B0EB3 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		52DB328D2673877B009B0EB3 /* WebClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebClient.swift; sourceTree = "<group>"; };
+		52DB328F267389AE009B0EB3 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		52DB329126738A81009B0EB3 /* RepositoryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +121,7 @@
 		529DA9CB266F44DE00F45479 /* TrendingRepos */ = {
 			isa = PBXGroup;
 			children = (
+				52DB3283267384C8009B0EB3 /* requests */,
 				529DAA09266F7A7200F45479 /* networks */,
 				529DAA04266F73EB00F45479 /* models */,
 				529DAA01266F49BF00F45479 /* views */,
@@ -168,8 +183,22 @@
 			isa = PBXGroup;
 			children = (
 				529DAA0A266F7AC200F45479 /* SwiftyJSON.swift */,
+				52DB3285267385BB009B0EB3 /* Request.swift */,
+				52DB328726738603009B0EB3 /* HTTPMethod.swift */,
+				52DB32892673862A009B0EB3 /* RequestParams.swift */,
+				52DB328B2673869B009B0EB3 /* NetworkError.swift */,
+				52DB328D2673877B009B0EB3 /* WebClient.swift */,
+				52DB328F267389AE009B0EB3 /* Reachability.swift */,
 			);
 			path = networks;
+			sourceTree = "<group>";
+		};
+		52DB3283267384C8009B0EB3 /* requests */ = {
+			isa = PBXGroup;
+			children = (
+				52DB329126738A81009B0EB3 /* RepositoryRequest.swift */,
+			);
+			path = requests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,8 +336,15 @@
 				529DAA06266F73FC00F45479 /* TrendingRepo.swift in Sources */,
 				529DAA08266F744200F45479 /* RepoOwner.swift in Sources */,
 				529DA9CF266F44DE00F45479 /* SceneDelegate.swift in Sources */,
+				52DB328A2673862A009B0EB3 /* RequestParams.swift in Sources */,
+				52DB328826738603009B0EB3 /* HTTPMethod.swift in Sources */,
+				52DB3286267385C0009B0EB3 /* Request.swift in Sources */,
 				529DAA0B266F7AC200F45479 /* SwiftyJSON.swift in Sources */,
+				52DB329226738A81009B0EB3 /* RepositoryRequest.swift in Sources */,
+				52DB328C2673869B009B0EB3 /* NetworkError.swift in Sources */,
 				529DA9D1266F44DE00F45479 /* ContentView.swift in Sources */,
+				52DB328E2673877B009B0EB3 /* WebClient.swift in Sources */,
+				52DB3290267389AE009B0EB3 /* Reachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
